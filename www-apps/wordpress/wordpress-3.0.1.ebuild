@@ -11,6 +11,7 @@ HOMEPAGE="http://wordpress.org/"
 SRC_URI="http://www.wordpress.org/${P}.tar.gz"
 
 LICENSE="GPL-2"
+SLOT="0"
 KEYWORDS="~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
 IUSE=""
 
