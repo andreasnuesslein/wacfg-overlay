@@ -8,7 +8,7 @@ EAPI="2"
 
 DESCRIPTION="Wordpress php and mysql based CMS system."
 HOMEPAGE="http://wordpress.org/"
-SRC_URI="http://www.wordpress.org/${P}.tar.gz"
+SRC_URI="http://wordpress.org/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
