@@ -25,8 +25,9 @@ RDEPEND="|| ( dev-lang/php[mysql] dev-lang/php[mysqli] )
 
 src_unpack() { :; }
 src_install() {
-	insinto /var/lib/webapps/${PN}
-	doins "${FILESDIR}"/${P}.py
 	insinto /var/lib/webapps/${PN}/sources
 	doins "${DISTDIR}"/${P}.tar.gz
+	insinto /var/lib/webapps/${PN}
+	insopts -m0755
+	doins "${FILESDIR}"/${P}.py
 }
