@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+import os
 from wacfg import WaCfg, tools, main
 
 class WordPress(WaCfg):
