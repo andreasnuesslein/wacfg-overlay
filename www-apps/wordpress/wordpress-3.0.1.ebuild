@@ -29,5 +29,5 @@ src_install() {
 	doins "${DISTDIR}"/${P}.tar.gz
 	insinto /var/lib/webapps/${PN}
 	insopts -m0755
-	doins "${FILESDIR}"/${P}.py
+	doins "${FILESDIR}"/${P}.wa
 }
