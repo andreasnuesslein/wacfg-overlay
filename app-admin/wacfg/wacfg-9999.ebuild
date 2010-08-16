@@ -4,6 +4,7 @@
 
 EAPI=3
 
+SUPPORT_PYTHON_ABIS="1"
 inherit distutils git
 
 DESCRIPTION="WaCfg is a replacement for webapp-config"
