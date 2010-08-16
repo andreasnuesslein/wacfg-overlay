@@ -21,10 +21,9 @@ KEYWORDS="amd64 arm ppc ppc64 ~sparc x86"
 IUSE="ldap mysql postgres ssl spell"
 
 DEPEND=""
-RDEPEND="dev-lang/php[crypt,iconv,ldap?,pcre,postgres?,session,spl,ssl?,unicode]
+RDEPEND="dev-lang/php[crypt,iconv,ldap?,pcre,postgres?,session,sockets,spl,ssl?,unicode]
 	!postgres? ( !mysql? ( dev-lang/php[sqlite] ) )
 	spell? ( dev-lang/php[curl,spell] )
-	dev-php/PEAR-PEAR
 "
 
 #need_httpd_cgi
@@ -34,7 +33,7 @@ src_unpack() { :; }
 
 src_install() {
 	insinto /var/lib/webapps/${PN}/sources
-	doins "${DISTDIR}"/${P}.tar.gz
+	doins "${DISTDIR}"/${MY_P}.tar.gz
 	insinto /var/lib/webapps/${PN}
 	insopts -m0755
 	doins "${FILESDIR}"/${P}.py
